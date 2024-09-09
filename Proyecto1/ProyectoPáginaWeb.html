@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Java</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <h1>Aprende Java</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Java Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto1/ProyectoPáginaWeb.html">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto2/ProyectoPáginaWeb.html">Conceptos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto3/ProyectoPáginaWeb.html">POO en Java</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto4/ProyectoPáginaWeb.html">Evaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto5/ProyectoPáginaWeb.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro" class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Introducción al Lenguaje de Programación Java</h2>
+                <p>Java es uno de los lenguajes de programación más influyentes y versátiles en el mundo del desarrollo de software. Creado por James Gosling y su equipo en Sun Microsystems en 1995, Java se ha mantenido a la vanguardia de la tecnología debido a su capacidad para adaptarse a las necesidades cambiantes del desarrollo de software. Desde su lanzamiento, Java ha evolucionado significativamente, y hoy en día es utilizado en una amplia variedad de aplicaciones, desde aplicaciones móviles hasta sistemas empresariales complejos.
+
+                    Historia y Evolución de Java
+                    La historia de Java comienza a principios de los años 90, cuando un equipo de ingenieros de Sun Microsystems, liderado por James Gosling, comenzó a trabajar en un proyecto conocido como el "Proyecto Green". Este proyecto tenía como objetivo desarrollar un lenguaje de programación que pudiera ser utilizado en una amplia gama de dispositivos electrónicos, desde dispositivos de consumo hasta grandes sistemas empresariales. En 1995, el proyecto culminó con el lanzamiento de Java, acompañado de una promesa revolucionaria: "Write Once, Run Anywhere" (WORA), es decir, "Escribe una vez, ejecuta en cualquier lugar". <br>
+                    
+                   <br> Esta filosofía de portabilidad se logró a través de la Máquina Virtual de Java (JVM), un componente crucial de la plataforma Java que permite que el código Java se ejecute en cualquier dispositivo que tenga una JVM instalada, independientemente del sistema operativo o la arquitectura del hardware. Esto hizo que Java fuera inmediatamente popular entre los desarrolladores, ya que les permitía escribir código una vez y ejecutarlo en múltiples plataformas sin necesidad de modificaciones significativas.
+                    
+                    A lo largo de los años, Java ha pasado por varias versiones, cada una de las cuales ha introducido nuevas características y mejoras. Desde la introducción de características como los "Generics" en Java 5 hasta la adición de "Lambdas" y el soporte para programación funcional en Java 8, el lenguaje ha continuado evolucionando para satisfacer las necesidades de los desarrolladores modernos. En 2009, Oracle Corporation adquirió Sun Microsystems, lo que llevó a un nuevo capítulo en la historia de Java. Bajo la gestión de Oracle, Java ha seguido creciendo, y hoy en día es una de las tecnologías más utilizadas en todo el mundo.</p>
+                    
+                    <p> <h1>Características Principales de Java </h1>
+                        <br>Java es conocido por sus numerosas características que lo hacen adecuado para una amplia variedad de aplicaciones. Algunas de sus características más destacadas incluyen: <br>
+                        
+                        <br><h3>Orientado a Objetos</h3> Java sigue el paradigma de la programación orientada a objetos (POO), lo que significa que se basa en la organización de software en objetos que contienen tanto datos como métodos que operan sobre esos datos. Esto facilita la creación de software modular, reutilizable y fácil de mantener. <br>
+                        
+                        <br><h3>Portabilidad</h3> Una de las características más destacadas de Java es su portabilidad. Gracias a la JVM, el código Java es independiente de la plataforma, lo que significa que puede ejecutarse en cualquier dispositivo o sistema operativo que tenga instalada una JVM. Esta capacidad de ser multiplataforma ha sido un factor clave en la adopción generalizada de Java. <br>
+                        
+                        <br><h3>Seguridad</h3> Java fue diseñado desde el principio con la seguridad en mente. El lenguaje incluye múltiples características de seguridad, como la gestión automática de memoria, la verificación de bytecode, y un modelo de seguridad estricto que protege contra amenazas como el acceso no autorizado a datos y la ejecución de código malicioso. <br>
+                        
+                        <br><h3>Multihilo</h3> Java ofrece un sólido soporte para la programación concurrente a través de su modelo de multihilo. Esto permite que los programas Java realicen múltiples tareas simultáneamente, mejorando el rendimiento y la capacidad de respuesta de las aplicaciones. <br>
+                        
+                        <br><h3>Rendimiento </h3>Aunque la portabilidad y la seguridad pueden afectar el rendimiento en comparación con lenguajes compilados directamente a código de máquina, Java ha mejorado significativamente su rendimiento a lo largo de los años. Las optimizaciones de la JVM, como la compilación just-in-time (JIT), permiten que las aplicaciones Java se ejecuten de manera eficiente. <br>
+                        
+                        <br><h3>Gestión Automática de Memoria</h3> Java utiliza un recolector de basura (Garbage Collector) para gestionar automáticamente la memoria. Esto significa que los desarrolladores no necesitan preocuparse por la asignación y liberación manual de memoria, lo que reduce el riesgo de errores como fugas de memoria.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <iframe class="1" width="560" height="315" src="https://www.youtube.com/embed/E8weQyNVWug" 
+                        title="Video de YouTube - Introducción a Java" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                        </iframe>
+                    <br>
+                        <iframe class="2" width="560" height="315" src="https://www.youtube.com/embed/sG1E6ds_Yd0" 
+                        title="Video de YouTube - Curso de Programación en Java" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                        </iframe>
+                    
+                    <br>
+                        <iframe class="3" width="560" height="315" src="https://www.youtube.com/embed/Y9T0gD_o1YU" 
+                        title="Video de YouTube - Aprende Java - Video Nuevo" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                        </iframe>
+        
+                    <br>
+                        <iframe class="4" width="560" height="315" src="https://www.youtube.com/embed/W86KTBSiX2o" 
+                        title="Video de YouTube - Curso de Java en Español" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                        </iframe>
+
+                    <br>
+                    <iframe class="5" width="560" height="315" src="https://www.youtube.com/embed/9WkfMtq4Vg0" 
+                    title="Video de YouTube - Curso de Java en Español" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                    </iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <p>&copy; 2024 Aprende Java. Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

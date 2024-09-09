@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Java</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <h1>Aprende Java</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Java Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto1/ProyectoPáginaWeb.html">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto2/ProyectoPáginaWeb.html">Conceptos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto3/ProyectoPáginaWeb.html">POO en Java</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto4/ProyectoPáginaWeb.html">Evaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto5/ProyectoPáginaWeb.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+        <section id="oop" class="mb-5">
+
+            <h2>Programación Orientada a Objetos en Java</h2>
+
+            <p>La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en la creación y manipulación de "objetos" que representan conceptos o entidades del mundo real. Este enfoque promueve una estructura de código más organizada, modular y reutilizable, lo que facilita el desarrollo y mantenimiento de aplicaciones complejas.
+
+                <h2>Conceptos Clave de la POO </h2>
+
+                <br>La POO se fundamenta en varios conceptos esenciales que permiten la creación de software de manera intuitiva y eficiente. Estos conceptos son: <br>
+                
+                <br><h3>Clases y Objetos</h3>
+                
+                Clase: Es una plantilla o un modelo a partir del cual se crean los objetos. Define las propiedades (atributos) y comportamientos (métodos) que los objetos creados a partir de ella tendrán. <br>
+                <br>Objeto: Es una instancia de una clase. Es una entidad autónoma que tiene un estado, representado por sus atributos, y un comportamiento, definido por sus métodos. <br>
+                <br>Ejemplo:
+                <br>
+
+                <pre><code class="language-java">
+                    class Coche {
+                        String marca; 
+                        String modelo; 
+                        int año; <br>
+                    
+                        void acelerar() {
+                            System.out.println("El coche está acelerando.");
+                         }
+                    } 
+                    
+                    public class Main {
+                        public static void main(String[] args) {
+                            Coche miCoche = new Coche();
+                           miCoche.marca = "Toyota";
+                            miCoche.modelo = "Corolla";
+                            miCoche.año = 2021;
+                            miCoche.acelerar();
+                        }
+                    } 
+                </code></pre><br>
+
+                En este ejemplo, Coche es una clase, y miCoche es un objeto de la clase Coche. <br>
+                
+               <br><h3>Encapsulamiento</h3> 
+                
+                El encapsulamiento es el mecanismo que permite restringir el acceso directo a los datos de un objeto. Esto se logra definiendo los atributos de un objeto como privados y proporcionando métodos públicos (getters y setters) para acceder y modificar estos atributos de manera controlada. <br>
+                <br>Ejemplo:
+                
+                <pre><code class="language-java">
+                
+                class Coche {
+                   private String marca;
+                   private String modelo;
+                
+                public String getMarca() {
+                        return marca;
+                  }
+                
+                public void setMarca(String marca) {
+                        this.marca = marca;
+                  }
+                
+                public String getModelo() {
+                        return modelo;
+                  }
+                
+                public void setModelo(String modelo) {
+                        this.modelo = modelo;
+                   }
+               } 
+            </code></pre>
+
+                <br>En este caso, los atributos marca y modelo están encapsulados, lo que significa que solo pueden ser accedidos o modificados mediante los métodos getMarca, setMarca, getModelo y setModelo. <br>
+                
+               <br><h3>Herencia</h3> 
+                
+                La herencia permite que una clase (subclase o clase derivada) herede atributos y métodos de otra clase (superclase o clase base). Esto promueve la reutilización del código y la creación de jerarquías de clases. <br>
+                <br>Ejemplo: <br>
+                
+                <pre><code class="language-java">
+                
+                class Vehiculo {
+                    String tipo;
+                
+                    void mover() {
+                        System.out.println("El vehículo se está moviendo.");
+                    }
+                }
+                
+                class Coche extends Vehiculo {
+                   String marca;
+                   String modelo;
+              }
+            </code></pre>
+
+                <br>Aquí, Coche hereda el atributo tipo y el método mover de la clase Vehiculo. <br>
+                
+               <br> <h3>Polimorfismo </h3>
+                
+                El polimorfismo permite que una misma operación o método pueda comportarse de diferentes maneras en diferentes clases. Esto se logra mediante la sobrescritura de métodos en las subclases. <br>
+               <br> Ejemplo:
+                
+               <pre><code class="language-java">
+                
+                class Vehiculo {
+                    void mover() {
+                        System.out.println("El vehículo se está moviendo.");
+                    }
+                }
+                
+                class Coche extends Vehiculo {
+                    @Override
+                    void mover() {
+                        System.out.println("El coche está acelerando.");
+                    }
+                }
+                
+                class Bicicleta extends Vehiculo {
+                    @Override
+                    void mover() {
+                        System.out.println("La bicicleta está pedaleando.");
+                    }
+                }
+            </code></pre>
+
+                <br>En este caso, tanto Coche como Bicicleta heredan el método mover de Vehiculo, pero cada uno lo implementa de manera diferente. <br>
+                
+               <br><h3>Abstracción </h3>
+                
+                La abstracción consiste en resaltar los aspectos esenciales de un objeto mientras se ocultan los detalles innecesarios. En la POO, las clases abstractas y las interfaces se utilizan para definir un contrato que otras clases deben cumplir. <br>
+                <br>Ejemplo:
+                
+                
+                <pre><code class="language-java">
+
+                abstract class Animal {
+                    abstract void sonido();
+                }
+                
+                class Perro extends Animal {
+                    @Override
+                    void sonido() {
+                        System.out.println("El perro ladra.");
+                    }
+                }
+                
+                class Gato extends Animal {
+                    @Override
+                    void sonido() {
+                        System.out.println("El gato maúlla.");
+                    }
+                } 
+            </code></pre>
+
+                <br>Aquí, Animal es una clase abstracta que define el método sonido, y Perro y Gato son clases concretas que implementan ese método de manera específica. <br>
+                
+                <h2>Ventajas de la POO</h2> 
+                <br>La Programación Orientada a Objetos ofrece numerosas ventajas que han hecho que este paradigma sea ampliamente adoptado en la industria del software: <br>
+                
+                <br><h4>Modularidad</h4>El código se organiza en clases y objetos, lo que facilita la comprensión, mantenimiento y modificación del código. <br>
+                <br><h4>Reutilización de Código</h4> La herencia y la reutilización de clases permiten reducir la duplicación de código y mejorar la eficiencia en el desarrollo. <br>
+                <br><h4>Mantenibilidad</h4>La POO fomenta el desarrollo de aplicaciones que son fáciles de mantener y evolucionar a lo largo del tiempo. <br>
+                <br><h4>Escalabilidad</h4>El diseño basado en objetos facilita la escalabilidad de las aplicaciones, ya que es posible agregar nuevas funcionalidades sin afectar el código existente. <br>
+                
+                <br><h3>Conclusión </h3>
+                La Programación Orientada a Objetos ha revolucionado la forma en que se desarrollan las aplicaciones, proporcionando una estructura de código más organizada, reutilizable y mantenible. Los conceptos fundamentales como clases, objetos, encapsulamiento, herencia, polimorfismo y abstracción son la base sobre la cual se construyen aplicaciones modernas, permitiendo a los desarrolladores crear software robusto y escalable que puede evolucionar con el tiempo.</p>
+            
+                <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQ0iFwXZcFi3eK90MaoCR1N4ZfA0kxPW3IQ&s" alt="POO en Java">
+            <img class="img3" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7txOOws7dsDWlXzmxBODVh5BIEndMn-4FSRZB3u3hcOUtAl1i9_EDOi9rfEwAVK3-YPtBXCriuHJhRZfFrwMmecj2wMBz6l3lHejOXtAPKMnPQ0tHvNhCxjbrv1WEjjMk6w24l46MRCE/s1600/herencia.PNG"alt="POO en Java">
+        
+        </section>
+
+        
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <p>&copy; 2024 Aprende Java</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

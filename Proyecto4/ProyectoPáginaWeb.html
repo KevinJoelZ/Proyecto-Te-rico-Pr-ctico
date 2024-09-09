@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Java</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <h1>Aprende Java</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Java Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto1/ProyectoPáginaWeb.html">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto2/ProyectoPáginaWeb.html">Conceptos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto3/ProyectoPáginaWeb.html">POO en Java</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto4/ProyectoPáginaWeb.html">Evaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../proyecto5/ProyectoPáginaWeb.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <h3 class="mt-5">Evaluación de Java</h3>
+        <form action="submit_evaluation.php" method="POST">
+            
+            <div class="form-group">
+                <label>Nombre de usuario:</label>
+                <input type="text" class="form-control" name="nombre_usuario" required>
+            </div>
+
+            <div class="form-group">
+                <label>1. ¿Qué es Java?</label>
+                <input type="text" class="form-control" name="question1" required>
+            </div>
+            <div class="form-group">
+                <label>2. ¿Cuál es la diferencia entre JDK y JRE?</label>
+                <input type="text" class="form-control" name="question2" required>
+            </div>
+            <div class="form-group">
+                <label>3. ¿Qué es una clase en Java?</label>
+                <input type="text" class="form-control" name="question3" required>
+            </div>
+            <div class="form-group">
+                <label>4. Explica el concepto de herencia.</label>
+                <input type="text" class="form-control" name="question4" required>
+            </div>
+            <div class="form-group">
+                <label>5. ¿Qué es un constructor?</label>
+                <input type="text" class="form-control" name="question5" required>
+            </div>
+            <div class="form-group">
+                <label>6. ¿Cómo se maneja la excepción en Java?</label>
+                <input type="text" class="form-control" name="question6" required>
+            </div>
+            <div class="form-group">
+                <label>7. ¿Qué es un paquete en Java?</label>
+                <input type="text" class="form-control" name="question7" required>
+            </div>
+            <div class="form-group">
+                <label>8. ¿Qué diferencia hay entre Herencia y Encapsulamiento en Java?</label>
+                <input type="text" class="form-control" name="question8" required>
+            </div>
+            <div class="form-group">
+                <label>9. ¿Qué es la JVM?</label>
+                <input type="text" class="form-control" name="question9" required>
+            </div>
+            <div class="form-group">
+                <label>10. Explica el concepto de polimorfismo.</label>
+                <input type="text" class="form-control" name="question10" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <br>
+    
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <p>&copy; 2024 Aprende Java. Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
